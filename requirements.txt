@@ -1,0 +1,12 @@
+# Core scientific computing
+numpy>=1.23.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+sympy>=1.12
+
+# Quantum Optics & Simulation
+qutip>=5.0.0
+
+# Interactive & notebook utilities
+ipywidgets>=8.0.0
+tqdm>=4.65.0
