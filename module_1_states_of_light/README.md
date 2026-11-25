@@ -1,6 +1,6 @@
-# Module 1: Single-Mode Quantum States of Light
+# Module 1: Single-Mode and Multi-Mode Quantum States of Light
 
-This module explores the core quantum states of single-mode radiation fields, ladder operators, phase space representations, photon counting statistics, and non-classicality criteria.
+This module explores canonical field quantization, the quantum vacuum, the complete taxonomy of single-mode radiation states, ladder operators, phase operators, photon counting statistics, and higher-order quantum coherence.
 
 ---
 
@@ -8,10 +8,13 @@ This module explores the core quantum states of single-mode radiation fields, la
 
 | # | Notebook | Status | Core Topics |
 | :-: | :--- | :-: | :--- |
-| **01** | [`01_fock_states_and_ladder_operators.ipynb`](./01_fock_states_and_ladder_operators.ipynb) | Completed | Discrete Fock space, ladder operators $\hat{a}, \hat{a}^\dagger$, commutator boundary artifact $-(N-1)$, quadrature noise $\frac{2n+1}{4}$, cutoff convergence $N \ge \bar{n} + 4\sqrt{\bar{n}} + 10$ |
-| **02** | [`02_coherent_states_and_displacement.ipynb`](./02_coherent_states_and_displacement.ipynb) | Completed | Displacement operator $\hat{D}(\alpha)$, coherent states $|\alpha\rangle$, Poissonian statistics, minimum uncertainty $\Delta X_1 \Delta X_2 = 1/4$, phase space circles, overcomplete basis |
-| **03** | `03_squeezed_states_and_quadrature_noise.ipynb` | Planned | Squeeze operator $\hat{S}(\xi)$, quadrature noise ellipses, sub-Poissonian statistics, even-Fock number distributions, noise reduction below shot noise |
-| **04** | `04_displaced_squeezed_states.ipynb` | Planned | Displaced squeezed states $\hat{D}(\alpha)\hat{S}(\xi)|0\rangle$ vs $\hat{S}(\xi)\hat{D}(\alpha)|0\rangle$, quantum interference in phase space, oscillatory photon distributions |
-| **05** | `05_thermal_and_mixed_states.ipynb` | Planned | Thermal states $\rho_{\text{th}}$, Bose-Einstein distribution, von Neumann entropy $S(\rho)$, purity $\mathcal{P}$, thermalization of coherent states |
-| **06** | `06_mandel_q_parameter.ipynb` | Planned | Mandel $Q$-parameter, Fano factor, non-classicality benchmarking ($Q < 0$), sub-Poissonian vs. super-Poissonian light |
-| **07** | `07_second_order_coherence_g2.ipynb` | Planned | Zero-delay second-order coherence $g^{(2)}(0)$, photon anti-bunching ($g^{(2)}(0) < 1$), bunching ($g^{(2)}(0) = 2$), coherent light ($g^{(2)}(0) = 1$) |
+| **01** | [`01_canonical_field_quantization_and_vacuum.ipynb`](./01_canonical_field_quantization_and_vacuum.ipynb) | Completed | Maxwell equation quantization, Coulomb gauge $\mathbf{A}(\mathbf{r})$, field operators $\hat{\mathbf{E}}$ and $\hat{\mathbf{B}}$, vacuum zero-point energy $\frac{1}{2}\hbar\omega$, Euler-Maclaurin regularization, Casimir attraction $P \propto d^{-4}$ |
+| **02** | [`02_fock_states_and_ladder_operators.ipynb`](./02_fock_states_and_ladder_operators.ipynb) | Completed | Discrete Fock space, ladder operators $\hat{a}, \hat{a}^\dagger$, commutator boundary artifact $-(N-1)$, quadrature noise $\frac{2n+1}{4}$, cutoff convergence $N \ge \bar{n} + 4\sqrt{\bar{n}} + 10$ |
+| **03** | [`03_coherent_states_and_displacement.ipynb`](./03_coherent_states_and_displacement.ipynb) | Completed | Displacement operator $\hat{D}(\alpha)$, coherent states $|\alpha\rangle$, Poissonian statistics, minimum uncertainty $\Delta X_1 \Delta X_2 = 1/4$, phase space circles, overcomplete basis |
+| **04** | [`04_squeezed_states_and_quadrature_noise.ipynb`](./04_squeezed_states_and_quadrature_noise.ipynb) | Completed | Squeeze operator $\hat{S}(\xi)$, quadrature noise ellipses, Bogoliubov transformation, even-Fock number distributions, noise reduction below shot noise (dB scaling) |
+| **05** | [`05_displaced_squeezed_states.ipynb`](./05_displaced_squeezed_states.ipynb) | Completed | Displaced squeezed states $\hat{D}(\alpha)\hat{S}(\xi)|0\rangle$ vs $\hat{S}(\xi)\hat{D}(\alpha)|0\rangle$, operator commutation $\gamma = \alpha\cosh r - \alpha^* e^{i\theta}\sinh r$, amplitude vs phase squeezing, Schleich-Wheeler interference in phase space |
+| **06** | [`06_thermal_and_mixed_states.ipynb`](./06_thermal_and_mixed_states.ipynb) | Completed | Thermal states $\hat{\rho}_{\text{th}}$, Bose-Einstein distribution, Einstein 1909 fluctuation decomposition $\bar{n} + \bar{n}^2$, purity $\mathcal{P} = 1/(2\bar{n}+1)$, von Neumann entropy, phase-diffused laser comparison |
+| **07** | [`07_quantum_phase_operators_and_pegg_barnett.ipynb`](./07_quantum_phase_operators_and_pegg_barnett.ipynb) | Completed | Dirac phase operator paradox, Susskind-Glogower non-unitary operators, Pegg-Barnett discrete $(s+1)$-dimensional phase basis, continuous $P(\theta)$, number-phase uncertainty $\Delta N \Delta\Phi \ge 1/2$ |
+| **08** | [`08_mandel_q_parameter.ipynb`](./08_mandel_q_parameter.ipynb) | Completed | Mandel $Q$-parameter, Fano factor, Glauber-Sudarshan non-classicality proof ($Q < 0$), sufficient vs necessary criteria, squeezing optimization landscape |
+| **09** | [`09_second_order_coherence_g2.ipynb`](./09_second_order_coherence_g2.ipynb) | Completed | Zero-delay coherence $g^{(2)}(0)$, Cauchy-Schwarz inequality, HBT interferometer, photon anti-bunching ($g^{(2)} < 1$), bunching ($g^{(2)} = 2$), detector jitter and $g^{(2)}(0) < 0.5$ criterion |
+| **10** | [`10_higher_order_coherence_and_hbt.ipynb`](./10_higher_order_coherence_and_hbt.ipynb) | Completed | Glauber $n$-th order coherence $g^{(n)}(0)$, thermal factorial super-bunching $n!$, multi-detector HBT delay landscape $g^{(3)}(\tau_1, \tau_2)$, single-photon multi-coincidence vanishing |
