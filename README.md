@@ -156,3 +156,8 @@ Launch Jupyter Notebook or JupyterLab:
 jupyter lab
 ```
 Navigate to any module (`module_0_qm_fundamentals` through `module_6_advanced_frontiers`) and open any `.ipynb` file. All notebooks run out-of-the-box in sequential execution mode.
+
+---
+
+## License
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
